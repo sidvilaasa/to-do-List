@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>To-do List</h1>
+  <app-task-form (addTask)="taskService.addTask($event.description,$event.priority)"></app-task-form>
+  
+  <app-task-list [tasks]="tasks"></app-task-list>
+</div>

@@ -1,0 +1,82 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.task-item.completed {
+  background-color: #f9f9f9;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-description {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.task-item.completed .task-description {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-date {
+  font-size: 12px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.task-priority {
+  font-size: 12px;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.task-priority:hover {
+  transform: scale(1.05);
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.complete-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #45a049;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f;
+}

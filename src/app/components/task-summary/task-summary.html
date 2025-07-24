@@ -1,0 +1,23 @@
+<div class="task-summary">   
+  <div class="summary-item" 
+       routerLink="/" 
+       routerLinkActive="active" 
+       [routerLinkActiveOptions]="{exact: true}">     
+    <span class="summary-label">Total Tasks:</span>     
+    <span class="summary-value total">{{ totalTasks }}</span>   
+  </div>   
+  
+  <div class="summary-item" 
+       routerLink="/completed" 
+       routerLinkActive="active">     
+    <span class="summary-label">Completed:</span>     
+    <span class="summary-value completed">{{ completedTasks }}</span>   
+  </div>   
+  
+  <div class="summary-item" 
+       routerLink="/pending" 
+       routerLinkActive="active">     
+    <span class="summary-label">Pending:</span>     
+    <span class="summary-value pending">{{ pendingTasks }}</span>   
+  </div> 
+</div>

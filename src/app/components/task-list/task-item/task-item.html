@@ -1,0 +1,13 @@
+<div class="task-item" [class.completed]="task.completed">
+  <div class="task-content">
+    <span class="task-description">{{ task.description }}</span>
+    <span class="task-date">{{ task.createdDate | date: 'short' }}</span>
+    <span class="task-priority" appHighlight>{{task.selectedpriority}}</span>
+  </div>
+  <div class="task-actions">
+    <button class="complete-btn" (click)="onComplete()">
+      {{ task.completed ? 'Undo' : 'Complete' }}
+    </button>
+    <button class="remove-btn" (click)="onRemove()">Remove</button>
+  </div>
+</div>

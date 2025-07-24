@@ -1,0 +1,12 @@
+<div class="task-list">
+  <div *ngIf="tasks.length === 0" class="no-tasks">
+    No tasks to show.
+  </div>
+  
+  <app-task-item 
+    *ngFor="let task of tasks" 
+    [task]="task"
+    (complete)="taskService.completeTask(task.id)"
+    (remove)="taskService.removeTask(task.id)">
+  </app-task-item>
+</div>

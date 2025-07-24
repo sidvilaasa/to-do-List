@@ -1,0 +1,15 @@
+<form class="task-form">
+  <input 
+    type="text" 
+    #taskInput 
+    placeholder="Add a new task..." 
+    required
+  />
+  <select #priorities required>
+    <option value="" disabled selected>Priority</option>
+    <option value="urgent">urgent</option>
+    <option value="normal">normal</option>
+    <option value="later">later</option>
+  </select>
+  <button type="button" (click)="onAddTask(taskInput,priorities)">Add Task</button>
+</form>
